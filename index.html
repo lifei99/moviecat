@@ -7,8 +7,8 @@
     <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" type="text/css" href="assets/css/wap.css">
 </head>
-
-<body>
+<!-- 8.在主页使用movieApp模块 -->
+<body ng-app="movieApp">
     <!-- 顶部导航栏开始 -->
     <div class="top">
         <div class="header">
@@ -68,6 +68,20 @@
     </footer>
     <!-- 自动补全C3样式的前缀 -->
     <script src="assets/js/prefixfree.min.js"></script>
+    <!-- 1.引入主包文件 -->
+    <script src="node_modules/angular/angular.js"></script>
+    <!-- 2.引入路由包 -->
+    <script src="node_modules/angular-route/angular-route.js"></script>
+    <!-- 3.引入自己的主入口文件 -->
+    <script src="js/app.js"></script>
+    <!-- 4.引入自己的路由配置文件 -->
+    <script src="js/route.js"></script>
+    <!-- 5.引入自己的服务文件 -->
+    <script src="js/service.js"></script>
+    <!-- 6.引入自己的控制器文件，正在热映 即将上映 top250的控制文件 -->
+    <script src="js/nowplaying.js"></script>
+    <script src="js/later.js"></script>
+    <script src="js/top250.js"></script>
 </body>
 
 </html>

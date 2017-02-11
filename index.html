@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>电影展示</title>
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/wap.css">
+</head>
+
+<body>
+    <!-- 顶部导航栏开始 -->
+    <div class="top">
+        <div class="header">
+            <a href="#/"><img src="assets/img/logo.png" alt=""></a>
+            <div class="search">
+                <input class="my-input" type="text" placeholder="电影搜索">
+                <button>搜索</button>
+            </div>
+        </div>
+        <nav class="nav">
+            <ul>
+                <!--li中添加 active 类样式，显示焦点状态。-->
+                <li class="active"><a href="#/">首页</a></li>
+                <li><a href="#/nowplaying">正在热映</a></li>
+                <li><a href="#/later">即将上映</a></li>
+                <li><a href="#/top250">Top250</a></li>
+            </ul>
+        </nav>
+    </div>
+    <!-- 顶部导航栏结束 -->
+    <div class="container">
+        <!-- 单页应用程序中：首页、列表页、详情页 展示的位置 -->
+        <div ng-view>
+            
+        </div>
+        <!-- 电影详情开始 -->
+        <div class="detail">
+            <h1>乾隆秘史  大清宝典</h1>
+            <div class="dt-info">
+                <div class="dti-i"><img src="assets/img/sc.jpg" alt=""></div>
+                <div class="dti-w">
+                    <p>
+                        <strong>导演：</strong>
+                        <span>XXX、XXX</span>
+                    </p>
+                    <p>
+                        <strong>主演：</strong>
+                        <span>舒畅、XXX</span>
+                    </p>
+                    <p><strong>类型：</strong>爱情、古装</p>
+                    <p><strong>国家：</strong>中国</p>
+                    <p><strong>评分：</strong>9.9</p>
+                    <p><strong>时间：</strong>2016</p>
+                    <p><strong>又名：</strong>大清宝典</p>
+                </div>
+            </div>
+            <h3>剧情简介:</h3>
+            <p style="color:#676767">这里剧情简介。这里剧情简介。这里剧情简介。这里剧情简介。这里剧情简介。这里剧情简介。这里剧情简介。这里剧情简介。这里剧情简介。这里剧情简介。这里剧情简介。这里剧情简介。这里剧情简介。这里剧情简介。这里剧情简介。这里剧情简介。这里剧情简介。这里剧情简介。这里剧情简介。这里剧情简介。这里剧情简介。这里剧情简介。这里剧情简介。这里剧情简介。这里剧情简介。这里剧情简介。这里剧情简介。</p>
+        </div>
+        <!-- 电影详情结束 -->
+        <!--其他-->
+    </div>
+    <footer class="footer">
+        <div class="container">
+            <p>版权所有&copy; 前端与移动开发学院 前端(允许侵权)</p>
+        </div>
+    </footer>
+    <!-- 自动补全C3样式的前缀 -->
+    <script src="assets/js/prefixfree.min.js"></script>
+</body>
+
+</html>
